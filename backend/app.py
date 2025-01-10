@@ -3,7 +3,7 @@ from flask_cors import CORS # CORS for frontend
 import json
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Чтение данных из файла
 with open('data.json', 'r', encoding='utf-8') as f:
