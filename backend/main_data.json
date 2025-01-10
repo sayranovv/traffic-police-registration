@@ -1,0 +1,262 @@
+[
+  {
+    "surname": "Иванов",
+    "name": "Вячеслав",
+    "patronymic": "Владимирович",
+    "reg_number": "Е955АК",
+    "car_brand": "Chevrolet",
+    "engine_volume": 2.2,
+    "year_of_release": 2011,
+    "year_of_registration": 2021
+  },
+  {
+    "surname": "Смирнов",
+    "name": "Роман",
+    "patronymic": "Иванович",
+    "reg_number": "К010УЕ",
+    "car_brand": "Toyota",
+    "engine_volume": 3.5,
+    "year_of_release": 1992,
+    "year_of_registration": 1993
+  },
+  {
+    "surname": "Смирнов",
+    "name": "Сергей",
+    "patronymic": "Евгеньевич",
+    "reg_number": "Т928РВ",
+    "car_brand": "Hyundai",
+    "engine_volume": 1.4,
+    "year_of_release": 1997,
+    "year_of_registration": 2000
+  },
+  {
+    "surname": "Сидоров",
+    "name": "Иван",
+    "patronymic": "Романович",
+    "reg_number": "О894КУ",
+    "car_brand": "ВАЗ",
+    "engine_volume": 4.0,
+    "year_of_release": 2023,
+    "year_of_registration": 2023
+  },
+  {
+    "surname": "Васильев",
+    "name": "Михаил",
+    "patronymic": "Андреевич",
+    "reg_number": "О670МА",
+    "car_brand": "Ford",
+    "engine_volume": 1.1,
+    "year_of_release": 2012,
+    "year_of_registration": 2016
+  },
+  {
+    "surname": "Александров",
+    "name": "Вячеслав",
+    "patronymic": "Григорьевич",
+    "reg_number": "К338ВУ",
+    "car_brand": "Mercedes",
+    "engine_volume": 3.2,
+    "year_of_release": 2003,
+    "year_of_registration": 2022
+  },
+  {
+    "surname": "Сидоров",
+    "name": "Андрей",
+    "patronymic": "Григорьевич",
+    "reg_number": "М413УХ",
+    "car_brand": "Porsche",
+    "engine_volume": 2.8,
+    "year_of_release": 1990,
+    "year_of_registration": 1996
+  },
+  {
+    "surname": "Иванов",
+    "name": "Олег",
+    "patronymic": "Сергеевич",
+    "reg_number": "С085НК",
+    "car_brand": "ВАЗ",
+    "engine_volume": 3.7,
+    "year_of_release": 2020,
+    "year_of_registration": 2022
+  },
+  {
+    "surname": "Степанов",
+    "name": "Владимир",
+    "patronymic": "Дмитриевич",
+    "reg_number": "К493НС",
+    "car_brand": "Nissan",
+    "engine_volume": 1.1,
+    "year_of_release": 1990,
+    "year_of_registration": 2015
+  },
+  {
+    "surname": "Михайлов",
+    "name": "Михаил",
+    "patronymic": "Константинович",
+    "reg_number": "Е976ЕК",
+    "car_brand": "Mercedes",
+    "engine_volume": 2.3,
+    "year_of_release": 2008,
+    "year_of_registration": 2018
+  },
+  {
+    "surname": "Александров",
+    "name": "Максим",
+    "patronymic": "Александрович",
+    "reg_number": "Т194ЕО",
+    "car_brand": "Hyundai",
+    "engine_volume": 2.9,
+    "year_of_release": 1995,
+    "year_of_registration": 2015
+  },
+  {
+    "surname": "Иванов",
+    "name": "Максим",
+    "patronymic": "Сергеевич",
+    "reg_number": "Н649АХ",
+    "car_brand": "ВАЗ",
+    "engine_volume": 1.2,
+    "year_of_release": 2000,
+    "year_of_registration": 2011
+  },
+  {
+    "surname": "Кузнецов",
+    "name": "Константин",
+    "patronymic": "Дмитриевич",
+    "reg_number": "С016НЕ",
+    "car_brand": "ГАЗ",
+    "engine_volume": 1.1,
+    "year_of_release": 2012,
+    "year_of_registration": 2023
+  },
+  {
+    "surname": "Васильев",
+    "name": "Максим",
+    "patronymic": "Константинович",
+    "reg_number": "Х160ОК",
+    "car_brand": "Nissan",
+    "engine_volume": 1.4,
+    "year_of_release": 2013,
+    "year_of_registration": 2015
+  },
+  {
+    "surname": "Попов",
+    "name": "Николай",
+    "patronymic": "Константинович",
+    "reg_number": "Е188КН",
+    "car_brand": "Toyota",
+    "engine_volume": 2.8,
+    "year_of_release": 2012,
+    "year_of_registration": 2021
+  },
+  {
+    "surname": "Семенов",
+    "name": "Алексей",
+    "patronymic": "Николаевич",
+    "reg_number": "В576НУ",
+    "car_brand": "Hyundai",
+    "engine_volume": 2.3,
+    "year_of_release": 2017,
+    "year_of_registration": 2017
+  },
+  {
+    "surname": "Михайлов",
+    "name": "Вячеслав",
+    "patronymic": "Сергеевич",
+    "reg_number": "Т295РХ",
+    "car_brand": "ВАЗ",
+    "engine_volume": 1.5,
+    "year_of_release": 2013,
+    "year_of_registration": 2020
+  },
+  {
+    "surname": "Попов",
+    "name": "Александр",
+    "patronymic": "Максимович",
+    "reg_number": "О291АТ",
+    "car_brand": "Nissan",
+    "engine_volume": 1.1,
+    "year_of_release": 2009,
+    "year_of_registration": 2013
+  },
+  {
+    "surname": "Михайлов",
+    "name": "Константин",
+    "patronymic": "Антонович",
+    "reg_number": "К079КО",
+    "car_brand": "Chevrolet",
+    "engine_volume": 1.6,
+    "year_of_release": 2002,
+    "year_of_registration": 2008
+  },
+  {
+    "surname": "Смирнов",
+    "name": "Андрей",
+    "patronymic": "Николаевич",
+    "reg_number": "Х042РК",
+    "car_brand": "Chevrolet",
+    "engine_volume": 2.5,
+    "year_of_release": 2010,
+    "year_of_registration": 2019
+  },
+  {
+    "surname": "Семенов",
+    "name": "Виталий",
+    "patronymic": "Михайлович",
+    "reg_number": "М902НВ",
+    "car_brand": "Toyota",
+    "engine_volume": 2.2,
+    "year_of_release": 2005,
+    "year_of_registration": 2016
+  },
+  {
+    "surname": "Александров",
+    "name": "Евгений",
+    "patronymic": "Романович",
+    "reg_number": "В129ЕО",
+    "car_brand": "Hyundai",
+    "engine_volume": 3.3,
+    "year_of_release": 1999,
+    "year_of_registration": 1999
+  },
+  {
+    "surname": "Михайлов",
+    "name": "Иван",
+    "patronymic": "Антонович",
+    "reg_number": "К854НУ",
+    "car_brand": "ВАЗ",
+    "engine_volume": 2.5,
+    "year_of_release": 2023,
+    "year_of_registration": 2023
+  },
+  {
+    "surname": "Федоров",
+    "name": "Константин",
+    "patronymic": "Викторович",
+    "reg_number": "У721КР",
+    "car_brand": "BMW",
+    "engine_volume": 3.2,
+    "year_of_release": 2015,
+    "year_of_registration": 2021
+  },
+  {
+    "surname": "Егоров",
+    "name": "Владимир",
+    "patronymic": "Евгеньевич",
+    "reg_number": "Н865НМ",
+    "car_brand": "Nissan",
+    "engine_volume": 2.8,
+    "year_of_release": 2021,
+    "year_of_registration": 2023
+  },
+  {
+    "surname": "Сидоров",
+    "name": "Владимир",
+    "patronymic": "Алексеевич",
+    "reg_number": "Е865МН",
+    "car_brand": "ВАЗ",
+    "engine_volume": 2.8,
+    "year_of_release": 2023,
+    "year_of_registration": 2023
+  }
+]
