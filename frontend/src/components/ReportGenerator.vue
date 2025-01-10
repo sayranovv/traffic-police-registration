@@ -99,29 +99,3 @@ onUnmounted(() => {
 
 <style scoped>
 </style>
-<!--
-<Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead>ФИО</TableHead>
-            <TableHead>Марка авто</TableHead>
-            <TableHead>Рег. номер</TableHead>
-            <TableHead>Мощность двигателя</TableHead>
-            <TableHead>Год выпуска</TableHead>
-            <TableHead>Год регистрации</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody v-if="owners.length">
-          <TableRow v-for="owner in owners" :key="owner.reg_number">
-            <TableCell>
-              {{ owner.surname }} {{ owner.name }} {{ owner.patronymic }}
-            </TableCell>
-            <TableCell>{{ owner.car_brand }}</TableCell>
-            <TableCell>{{ owner.reg_number }}</TableCell>
-            <TableCell>{{ owner.engine_volume }}</TableCell>
-            <TableCell>{{ owner.year_of_release }}</TableCell>
-            <TableCell>{{ owner.year_of_registration }}</TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
--->

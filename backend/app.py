@@ -3,7 +3,7 @@ from flask_cors import CORS # CORS for frontend
 import json
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://traffic-police-registration.vercel.app"}})
 
 # Чтение данных из файла
 with open('data.json', 'r', encoding='utf-8') as f:
