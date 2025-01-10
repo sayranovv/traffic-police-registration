@@ -1,8 +1,6 @@
-import os
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import json
-
 app = Flask(__name__)
 CORS(app)
 
@@ -43,5 +41,4 @@ def generate_report(report_type):
     return jsonify(sorted_data)
 
 if __name__ == '__main__':
-    # Уберите debug=True для продакшн-среды
-    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)), debug=False)
+    app.run(debug=False, host="0.0.0.0", port=5000)

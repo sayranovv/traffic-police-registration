@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted, onUnmounted} from 'vue'
+import {ref, onMounted, onUnmounted, computed} from 'vue'
 import axios from 'axios'
 
 import {
@@ -51,6 +51,10 @@ onUnmounted(() => {
   window.removeEventListener('resize', updateScreenSize)
 })
 
+const isCorrectYear = computed(() => {
+  return yearLimit.value > 1950 && yearLimit.value < 2025;
+})
+
 </script>
 
 <template>
@@ -62,7 +66,7 @@ onUnmounted(() => {
       <button @click="generateReport(2)" class="py-2 px-3 bg-blue-600 rounded-lg">Отчёт 2</button>
       <div>
         <input v-model="yearLimit" placeholder="Год для отчёта 3" type="number" class="py-2 px-3 bg-blue-600 rounded-lg w-36" />
-        <button @click="generateReport(3)" class="ml-3 py-2 px-3 bg-blue-600 rounded-lg">Отчёт 3</button>
+        <button @click="generateReport(3)" :disabled="!isCorrectYear" class="ml-3 py-2 px-3 bg-blue-600 rounded-lg">Отчёт 3</button>
       </div>
     </div>
     <div class="p-2 overflow-x-auto w-full">
