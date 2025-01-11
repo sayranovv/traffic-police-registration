@@ -22,7 +22,7 @@ const screenWidth = ref(window.innerWidth)
 const fetchOwners = async () => {
   isLoading.value = true
   try {
-    const response = await axios.get('https://traffic-police-registration-production.up.railway.app/owners');
+    const response = await axios.get('http://127.0.0.1:5000/owners');
     owners.value = response.data;
     console.log('yup', owners)
   } catch (error) {
@@ -36,7 +36,7 @@ const generateReport = async (reportType) => {
   isLoading.value = true
   try {
     const payload = reportType === 3 ? { year_limit: yearLimit.value } : {};
-    const response = await axios.post(`https://traffic-police-registration-production.up.railway.app/reports/${reportType}`, payload);
+    const response = await axios.post(`http://127.0.0.1:5000/reports/${reportType}`, payload);
 
     owners.value = response.data;
     console.log('yup')
