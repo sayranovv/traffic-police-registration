@@ -6,9 +6,9 @@
 
 ### Стек технологий
 
-- Vue (frontend)
-- Python (backend)
-- Flask (rest api)
+- vue (frontend)
+- python (backend)
+- flask (rest api)
 - shadcn (ui library)
 - tailwind css
 - composition api
