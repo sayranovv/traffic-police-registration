@@ -34,7 +34,7 @@ const screenWidth = ref(window.innerWidth)
 const fetchOwners = async () => {
   isLoading.value = true
   try {
-    const response = await axios.get('http://127.0.0.1:5000/owners');
+    const response = await axios.get('https://traffic-police-registration-production.up.railway.app/owners');
     owners.value = response.data;
     console.log('yup', owners)
   } catch (error) {
@@ -60,7 +60,7 @@ const addOwner = async () => {
 }
 const editOwner = async () => {
   try {
-    const response = await axios.put(`http://localhost:5000/owners/${owner.value.reg_number}`, owner.value);
+    const response = await axios.put(`https://traffic-police-registration-production.up.railway.app/owners/${owner.value.reg_number}`, owner.value);
     showAlert('Данные владельца обновлены')
   } catch (error) {
     alert('Ошибка при редактировании владельца');
@@ -69,7 +69,7 @@ const editOwner = async () => {
 }
 const deleteOwner = async () => {
   try {
-    const response = await axios.delete(`http://localhost:5000/owners/${deleteRegNumber.value}`);
+    const response = await axios.delete(`https://traffic-police-registration-production.up.railway.app/owners/${deleteRegNumber.value}`);
     showAlert('Владелец авто успешно удален')
   } catch (error) {
     alert('Ошибка при удалении владельца');
