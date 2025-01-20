@@ -68,8 +68,11 @@ const isCorrectYear = computed(() => {
 </script>
 
 <template>
-  <div class="p-8 rounded-3xl bg-blue-500 mx-auto my-auto flex flex-col justify-center items-center gap-6 text-white max-w-4xl" v-if="screenWidth > 640">
-    <h1 class="text-4xl font-bold">Учёт в ГИБДД</h1>
+  <div class="p-8 rounded-3xl bg-blue-500 mx-auto my-auto flex flex-col justify-center items-center gap-6 text-white max-w-4xl" v-if="screenWidth > 640"><div class="w-full flex items-center justify-center gap-10 pl-6">
+    <RouterLink to="/" class="mt-1 hover:underline">На главную</RouterLink>
+    <h1 class="text-4xl font-bold ml-10">Учёт в ГИБДД</h1>
+    <RouterLink to="/edit" class="mt-1 hover:underline ml-6">Редактировать базу</RouterLink>
+  </div>
     <div class="flex flex-wrap justify-center items-center gap-3">
       <button @click="fetchOwners" class="py-2 px-3 bg-blue-600 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium">Получить полный список</button>
       <button @click="generateReport(1)" class="py-2 px-3 bg-blue-600 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium">Отчёт 1</button>

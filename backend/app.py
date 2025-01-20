@@ -6,8 +6,14 @@ app = Flask(__name__)
 CORS(app)
 
 # Чтение данных из файла
-with open('data.json', 'r', encoding='utf-8') as f:
-    owners = json.load(f)
+def load_data():
+    with open('data.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+# Сохранение данных в файл
+def save_data(data):
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 # Реализация функции сортировки обменом (сортировка пузырьком)
 def bubble_sort(data, key_func):
@@ -20,6 +26,7 @@ def bubble_sort(data, key_func):
 # Определение маршрута для получения списка всех владельцев автомобилей
 @app.route('/owners', methods=['GET'])
 def get_owners():
+    owners = load_data()
     return jsonify(owners) # Получаем данные запроса в формате JSON
 
 # Определение маршрута для генерации отчета по типу
@@ -27,6 +34,7 @@ def get_owners():
 def generate_report(report_type):
     # Получаем данные запроса в формате JSON
     data = request.json
+    owners = load_data()
     # Копируем исходные данные, чтобы не изменять их напрямую
     sorted_data = owners[:]
 
@@ -66,6 +74,38 @@ def generate_report(report_type):
 
     # Возвращаем отсортированные данные в формате JSON
     return jsonify(sorted_data)
+
+
+
+
+# Определение маршрута для добавления нового владельца
+@app.route('/owners', methods=['POST'])
+def add_owner():
+    new_owner = request.json
+    owners = load_data()
+    owners.append(new_owner)
+    save_data(owners)
+    return jsonify({"message": "Owner added successfully"}), 201
+
+# Определение маршрута для редактирования владельца по регистрационному номеру
+@app.route('/owners/<string:reg_number>', methods=['PUT'])
+def edit_owner(reg_number):
+    updated_owner = request.json
+    owners = load_data()
+    for i, owner in enumerate(owners):
+        if owner['reg_number'] == reg_number:
+            owners[i] = updated_owner
+            save_data(owners)
+            return jsonify({"message": "Owner updated successfully"}), 200
+    return jsonify({"error": "Owner not found"}), 404
+
+# Определение маршрута для удаления владельца по регистрационному номеру
+@app.route('/owners/<string:reg_number>', methods=['DELETE'])
+def delete_owner(reg_number):
+    owners = load_data()
+    owners = [owner for owner in owners if owner['reg_number'] != reg_number]
+    save_data(owners)
+    return jsonify({"message": "Owner deleted successfully"}), 200
 
 # Запуск приложения Flask
 if __name__ == '__main__':
